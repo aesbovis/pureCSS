@@ -1,0 +1,52 @@
+/* ****************************
+ * @file   : cuteRound.css
+ * @author : aesbovis
+ * @e-mail : aesbovis@gmail.com
+ * @version: 1.0
+ * @lisence: GNU v3.0
+ * @date   : 2016-05
+ * @Description: It is a set of lower-case letters, cute and round.
+ * ****************************/
+body { margin: 0; padding: 0;}
+#alphabet { width: 700px; margin: 100px auto;}
+.box { width: 90px; height: 90px; margin: 20px 5px; float: left; position: relative;}
+.round { background: #333; border-radius: 90px;}
+.round:before, #f:after, #h:after, #j:after, #k:after, #m:after, #r:after, #s:after, #t:after, #w:after, #x:after, #y:after, #z:after { position: absolute; content: "\00a0";}
+
+#a:before { width: 20px; height: 45px; background: #333; bottom: 0; right: 0; border-radius: 0 0 10px 10px;}
+#b:before { width: 20px; height: 45px; background: #333; top: 0; left: 0; border-radius: 10px 10px 0 0;}
+#c:before { width: 15px; height: 40px; background: #fff; top: 25px; right: 0; border-radius: 10px;}
+#d:before { width: 20px; height: 45px; background: #333; top: 0; right: 0; border-radius: 10px 10px 0 0;}
+#e:before { width: 30px; height: 10px; background: #fff; bottom: 20px; right: 0; border-radius: 10px 0 0 10px;}
+#f:before { width: 20px; height: 70px; background: #fff; bottom: 0; right: 0; border-radius: 35px 10px 0 0;}
+#f:after { width: 20px; height: 15px; background: #333; top: 35px; right: 5px; border-radius: 0 10px 10px 0;}
+#g:before { width: 30px; height: 10px; background: #fff; bottom: 20px; left: 0; border-radius: 0 10px 10px 10px;}
+#h:before { width: 20px; height: 45px; background: #333; top: 0; left: 0; border-radius: 10px 10px 0 0;}
+#h:after { width: 16px; height: 25px; background: #fff; bottom: 0; right: 38px; border-radius: 10px 10px 0 0;}
+#i:before { width: 46px; height: 15px; background: #333; top: -20px; left: 22px; border-radius: 10px;}
+#j:before { width: 16px; height: 40px; background: #fff; bottom: 15px; left: 0; border-radius: 0 0 10px 10px;}
+#j:after { width: 46px; height: 15px; background: #333; top: -20px; left: 22px; border-radius: 10px;}
+#k:before { width: 20px; height: 45px; background: #333; top: 0; left: 0; border-radius: 10px 10px 0 0;}
+#k:after { width: 0; height: 0; border-width: 15px 25px 40px; border-style: solid; border-color: transparent #fff	transparent transparent; bottom: -15px; right: 0;}
+#l:before { width: 15px; height: 45px; background: #fff; top: 0; right: 0; border-radius: 0 0 10px 10px;}
+#m:before { width: 10px; height: 25px; background: #fff; bottom: 0; left: 22px; border-radius: 10px 10px 0 0;}
+#m:after { width: 10px; height: 25px; background: #fff; bottom: 0; right: 22px; border-radius: 10px 10px 0 0;}
+#n:before { width: 16px; height: 25px; background: #fff; bottom: 0; right: 38px; border-radius: 10px 10px 0 0;}
+#p:before { width: 20px; height: 45px; background: #333; bottom: 0; left: 0; border-radius: 0 0 10px 0;}
+#q:before { width: 20px; height: 45px; background: #333; bottom: 0; right: 0; border-radius: 0 0 0 10px;}
+#r:before { width: 20px; height: 45px; background: #333; top: 0; left: 0; border-radius: 0 10px 0 0;}
+#r:after { width: 40px; height: 50px; background: #fff; bottom: 0; right: 0; border-radius: 40px 0 0 0;}
+#s:before { width: 25px; height: 10px; background: #fff; top: 20px; right: 0; border-radius: 10px 0 0 10px;}
+#s:after { width: 25px; height: 10px; background: #fff; bottom: 20px; left: 0; border-radius: 0 10px 10px 0;}
+#t:before { width: 15px; height: 25px; background: #fff; bottom: 30px; right: 0; border-radius: 0 0 10px 10px;}
+#t:after { width: 15px; height: 20px; background: #fff; top: 0; right: 0;}
+#u:before { width: 16px; height: 25px; background: #fff; top: 0; right: 38px; border-radius: 0 0 10px 10px;}
+#v:before { width: 0; height: 0; border-width: 25px 10px; border-style: solid; border-color: #fff transparent transparent; top: 0; right: 35px;}
+#w:before { width: 10px; height: 25px; background: #fff; top: 0; left: 22px; border-radius: 0 0 10px 10px;}
+#w:after { width: 10px; height: 25px; background: #fff; top: 0; right: 22px; border-radius: 0 0 10px 10px;}
+#x:before { width: 0; height: 70px; border-width: 10px 10px; border-style: solid; border-color: #fff transparent; top: 0; right: 35px;}
+#x:after { width: 66px; height: 0; border-width: 14px 14px; border-style: solid; border-color: transparent #fff; top: 30px; right: -2px; border-radius: 90px / 40px;}
+#y:before { width: 16px; height: 25px; background: #fff; top: 0; right: 38px; border-radius: 0 0 10px 10px;}
+#y:after { width: 30px; height: 10px; background: #fff; bottom: 20px; left: 0; border-radius: 0 10px 10px 10px;}
+#z:before { width: 0; height: 0; border-width: 0 15px 30px; border-style: solid; border-color: transparent transparent transparent #fff; top: 30px; left: 0;}
+#z:after { width: 0; height: 0; border-width: 30px 15px 0; border-style: solid; border-color: transparent #fff transparent transparent; bottom: 30px; right: 0;}
