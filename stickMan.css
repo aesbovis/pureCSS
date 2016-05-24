@@ -1,0 +1,1018 @@
+/*
+ * @file   : stickMan.css
+ * @author : aesbovis
+ * @e-mail : aesbovis@gmail.com
+ * @version: 1.0
+ * @lisence: GPLv3
+ * @date   : 2012.04
+ * @Description:
+ * It is my first time to try to make a simple animation with CSS only.
+ * The stick man stands up from squatting, and then walks.
+ */
+#stickMan {
+    position: relative;
+    width: 620px;
+    height: 345px;
+    margin: 200px auto;
+}
+#stickMan div { background-color: #ffff00;}
+
+#head {
+    position: absolute;
+    top: 0;
+    left: 540px;
+    width: 75px;
+    height: 75px;
+    border: 1px solid;
+    border-radius: 40px;
+    -webkit-animation: HeadAnimation 10s 1;
+    z-index: 3;
+}
+#body {
+    position: absolute;
+    top: 75px;
+    left: 552px;
+    width: 50px;
+    height: 120px;
+    border: 1px solid;
+    border-radius: 25px;
+    -webkit-animation: BodyAnimation 10s 1;
+    z-index: 2;
+}
+#rupperarm, #lupperarm {
+    position: absolute;
+    top: 90px;
+    left: 552px;
+    width: 40px;
+    height: 95px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+#rupperarm {
+    -webkit-animation: RUpperArmAnimation 10s 1;
+    z-index: 5;
+}
+#lupperarm {
+    right: 100px;
+    -webkit-animation: LUpperArmAnimation 10s 1;
+    z-index: 1;
+}
+#rforearm, #lforearm {
+    position: absolute;
+    top: 155px;
+    left: 552px;
+    width: 40px;
+    height: 70px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+#rforearm {
+    -webkit-animation: RForeArmAnimation 10s 1;
+    z-index: 5;
+}
+#lforearm {
+    -webkit-animation: LForeArmAnimation 10s 1;
+    z-index: 1;
+}
+#rthigh, #lthigh {
+    position: absolute;
+    top: 155px;
+    left: 552px;
+    width: 50px;
+    height: 115px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+#rthigh {
+    -webkit-animation: RThighAnimation 10s 1;
+    z-index: 3;
+}
+#lthigh {
+    -webkit-animation: LThighAnimation 10s 1;
+    z-index: 1;
+}
+#rshank, #lshank {
+    position: absolute;
+    top: 230px;
+    left: 552px;
+    width: 50px;
+    height: 110px;
+    border: 1px solid;
+    border-radius: 25px;
+}
+#rshank {
+    -webkit-animation: RShankAnimation 10s 1;
+    z-index: 4;
+}
+#lshank {
+    -webkit-animation: LShankAnimation 10s 1;
+    z-index: 1;
+}
+
+/* ******************* *
+ * Animation Functions *
+ * ******************* */
+@-webkit-keyframes HeadAnimation
+{
+0% {
+    top: 95px;
+    left: 35px;
+}
+40% {
+    top: 0;
+    left: 0;
+}
+47% {
+    top: 20px;
+    left: 72px;
+}
+50% {
+    top: 20px;
+    left: 118px;
+}
+53% {
+    top: 0;
+    left: 140px;
+}
+60% {
+    top: 20px;
+    left: 218px;
+}
+63% {
+    top: 10px;
+    left: 242px;
+}
+66% {
+    top: 0;
+    left: 262px;
+}
+73% {
+    top: 20px;
+    left: 323px;
+}
+77% {
+    top: 10px;
+    left: 378px;
+}
+80% {
+    top: 0;
+    left: 428px;
+}
+87% {
+    top: 20px;
+    left: 500px;
+}
+90% {
+    top: 5px;
+    left: 520px;
+}
+93% {
+    top: 0;
+    left: 540px;
+}
+100% {
+    top: 0;
+    left : 540px;
+}
+}
+@-webkit-keyframes BodyAnimation
+{
+0% {
+    top: 165px;
+    left: 12px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(15deg);
+}
+40% {
+    top: 75px;
+    left: 12px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 95px;
+    left: 72px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+50% {
+    top: 95px;
+    left: 118px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+53% {
+    top: 75px;
+    left: 150px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+60% {
+    top: 95px;
+    left: 218px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+63% {
+    top: 85px;
+    left: 242px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+66% {
+    top: 75px;
+    left: 272px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+73% {
+    top: 95px;
+    left: 323px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+77% {
+    top: 85px;
+    left: 378px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+80% {
+    top: 75px;
+    left: 428px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+87% {
+    top: 95px;
+    left: 500px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+90% {
+    top: 80px;
+    left: 520px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(5deg);
+}
+93% {
+    top: 75px;
+    left: 552px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 75px;
+    left: 552px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+}
+
+/* ******************* *
+ * Right Arm Animation *
+ * ******************* */
+@-webkit-keyframes RUpperArmAnimation
+{
+0% {
+    left: 37px;
+    top: 175px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-15deg);
+}
+40% {
+    top: 90px;
+    left: 12px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 110px;
+    left: 87px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-45deg);
+}
+50% {
+    top: 110px;
+    left: 133px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-10deg);
+}
+53% {
+    top: 90px;
+    left: 150px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+60% {
+    top: 110px;
+    left: 218px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(25deg);
+}
+63% {
+    top: 100px;
+    left: 247px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+66% {
+    top: 90px;
+    left: 272px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+73% {
+    top: 110px;
+    left: 338px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-45deg);
+}
+77% {
+    top: 100px;
+    left: 393px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-10deg);
+}
+80% {
+    top: 90px;
+    left: 433px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+87% {
+    top: 110px;
+    left: 500px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(25deg);
+}
+90% {
+    top: 95px;
+    left: 525px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+93% {
+    top: 90px;
+    left: 552px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 90px;
+    left: 552px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+}
+@-webkit-keyframes RForeArmAnimation
+{
+0% {
+    top: 230px;
+    left: 57px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-90deg);
+}
+40% {
+    top: 155px;
+    left: 12px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 153px;
+    left: 132px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-75deg);
+}
+50% {
+    top: 170px;
+    left: 143px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-20deg);
+}
+53% {
+    top: 155px;
+    left: 150px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+60% {
+    top: 169px;
+    left: 191px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(15deg);
+}
+63% {
+    top: 165px;
+    left: 242px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+66% {
+    top: 155px;
+    left: 272px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+73% {
+    top: 153px;
+    left: 383px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-75deg);
+}
+77% {
+    top: 160px;
+    left: 403px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-20deg);
+}
+80% {
+    top: 155px;
+    left: 428px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+87% {
+    top: 169px;
+    left: 473px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(15deg);
+}
+90% {
+    top: 160px;
+    left: 520px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+93% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+}
+
+/* ****************** *
+ * Left Arm Animation *
+ * ****************** */
+@-webkit-keyframes LUpperArmAnimation
+{
+0% {
+    top: 175px;
+    left: 37px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-35deg);
+}
+40% {
+    top: 90px;
+    left: 12px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 110px;
+    left: 72px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(25deg);
+}
+50% {
+    top: 110px;
+    left: 123px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+53% {
+    top: 90px;
+    left: 150px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+60% {
+    top: 110px;
+    left: 233px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-45deg);
+}
+63% {
+    top: 100px;
+    left: 257px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-10deg);
+}
+66% {
+    top: 90px;
+    left: 272px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+73% {
+    top: 110px;
+    left: 323px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(25deg);
+}
+77% {
+    top: 100px;
+    left: 383px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+80% {
+    top: 90px;
+    left: 443px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-10deg);
+}
+87% {
+    top: 110px;
+    left: 515px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-45deg);
+}
+90% {
+    top: 95px;
+    left: 535px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-10deg);
+}
+93% {
+    top: 90px;
+    left: 552px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 90px;
+    left: 552px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+}
+@-webkit-keyframes LForeArmAnimation
+{
+0% {
+    top: 230px;
+    left: 75px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-35deg);
+}
+40% {
+    top: 155px;
+    left: 12px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 169px;
+    left: 45px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(15deg);
+}
+50% {
+    top: 175px;
+    left: 118px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+53% {
+    top: 155px;
+    left: 150px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+60% {
+    top: 153px;
+    left: 278px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-75deg);
+}
+63% {
+    top: 160px;
+    left: 267px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-20deg);
+}
+66% {
+    top: 155px;
+    left: 272px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+73% {
+    top: 169px;
+    left: 296px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(15deg);
+}
+77% {
+    top: 165px;
+    left: 378px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(5deg);
+}
+80% {
+    top: 150px;
+    left: 453px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-20deg);
+}
+87% {
+    top: 153px;
+    left: 560px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-75deg);
+}
+90% {
+    top: 155px;
+    left: 545px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(-20deg);
+}
+93% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 20px 20px;
+    -webkit-transform: rotate(0);
+}
+}
+
+/* ******************* *
+ * Right Leg Animation *
+ * ******************* */
+@-webkit-keyframes RThighAnimation
+{
+0% {
+    top: 245px;
+    left: 12px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-80deg);
+}
+40% {
+    top: 155px;
+    left: 12px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 175px;
+    left: 72px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(30deg);
+}
+50% {
+    top: 172px;
+    left: 117px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(10deg);
+}
+53% {
+    top: 155px;
+    left: 150px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-10deg);
+}
+60% {
+    top: 177px;
+    left: 217px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-45deg);
+}
+63% {
+    top: 157px;
+    left: 272px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(-28deg);
+}
+66% {
+    top: 155px;
+    left: 272px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+73% {
+    top: 165px;
+    left: 287px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(30deg);
+}
+77% {
+    top: 160px;
+    left: 377px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(10deg);
+}
+80% {
+    top: 155px;
+    left: 427px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-10deg);
+}
+87% {
+    top: 180px;
+    left: 500px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-45deg);
+}
+90% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(-28deg);
+}
+93% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+}
+@-webkit-keyframes RShankAnimation
+{
+0% {
+    top: 235px;
+    left: 30px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(65deg);
+}
+40% {
+    top: 230px;
+    left: 12px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 230px;
+    left: 22px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(15deg);
+}
+50% {
+    top: 237px;
+    left: 105px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(40deg);
+}
+53% {
+    top: 220px;
+    left: 162px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(30deg);
+}
+60% {
+    top: 225px;
+    left: 265px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(0);
+}
+66% {
+    top: 230px;
+    left: 272px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+73% {
+    top: 230px;
+    left: 272px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(15deg);
+}
+77% {
+    top: 232px;
+    left: 362px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(40deg);
+}
+80% {
+    top: 217px;
+    left: 440px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(30deg);
+}
+87% {
+    top: 225px;
+    left: 547px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(0);
+}
+93% {
+    top: 230px;
+    left: 552px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 230px;
+    left: 552px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+}
+
+/* ****************** *
+ * Left Leg Animation *
+ * ****************** */
+@-webkit-keyframes LThighAnimation
+{
+0% {
+    top: 245px;
+    left: 12px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-70deg);
+}
+40% {
+    top: 155px;
+    left: 12px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 175px;
+    left: 72px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-45deg);
+}
+50% {
+    top: 165px;
+    left: 150px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(-28deg);
+}
+53% {
+    top: 155px;
+    left: 150px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+60% {
+    top: 155px;
+    left: 167px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(45deg);
+}
+63% {
+    top: 165px;
+    left: 242px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(10deg);
+}
+66% {
+    top: 155px;
+    left: 272px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-10deg);
+}
+73% {
+    top: 175px;
+    left: 322px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-45deg);
+}
+77% {
+    top: 155px;
+    left: 410px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(-28deg);
+}
+80% {
+    top: 155px;
+    left: 427px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(0);
+}
+87% {
+    top: 155px;
+    left: 452px;
+    -webkit-transform-origin: 25px 95px;
+    -webkit-transform: rotate(45deg);
+}
+90% {
+    top: 165px;
+    left: 517px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(10deg);
+}
+93% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 155px;
+    left: 552px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(0);
+}
+}
+@-webkit-keyframes LShankAnimation
+{
+0% {
+    top: 235px;
+    left: 30px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(70deg);
+}
+40% {
+    top: 230px;
+    left: 12px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+47% {
+    top: 225px;
+    left: 122px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-22deg);
+}
+50% {
+    top: 230px;
+    left: 147px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+53% {
+    top: 230px;
+    left: 150px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+60% {
+    top: 225px;
+    left: 150px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(15deg);
+}
+63% {
+    top: 235px;
+    left: 230px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(40deg);
+}
+66% {
+    top: 220px;
+    left: 285px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(30deg);
+}
+73% {
+    top: 230px;
+    left: 372px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(-22deg);
+}
+77% {
+    top: 225px;
+    left: 410px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+80% {
+    top: 225px;
+    left: 427px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(0);
+}
+87% {
+    top: 220px;
+    left: 440px;
+    -webkit-transform-origin: 25px 85px;
+    -webkit-transform: rotate(15deg);
+}
+90% {
+    top: 225px;
+    left: 502px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(30deg);
+}
+93% {
+    top: 230px;
+    left: 552px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(0);
+}
+100% {
+    top: 230px;
+    left: 552px;
+    -webkit-transform-origin: 25px 25px;
+    -webkit-transform: rotate(0);
+}
+}
